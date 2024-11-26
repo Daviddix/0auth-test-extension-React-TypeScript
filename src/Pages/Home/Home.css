@@ -1,0 +1,16 @@
+.home-body button{
+    margin:10rem auto;
+    display: block;
+    padding:1rem 2rem;
+    border: 1px solid #0000002a;
+    border-radius: .8rem;
+    -webkit-border-radius: .8rem;
+    -moz-border-radius: .8rem;
+    -ms-border-radius: .8rem;
+    -o-border-radius: .8rem;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.129);
+    background-color: #fff;
+    font-weight: 600;
+    color: black;
+    cursor: pointer;
+}
