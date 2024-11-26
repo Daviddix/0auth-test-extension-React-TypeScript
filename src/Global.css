@@ -13,3 +13,16 @@ main{
     width:350px;
     height:450px;
 }
+
+button:active{
+    transition: transform ease-in-out .2s;
+    transform: scale(.95);
+    -webkit-transform: scale(.95);
+    -moz-transform: scale(.95);
+    -ms-transform: scale(.95);
+    -o-transform: scale(.95);
+    -webkit-transition: transform ease-in-out .2s;
+    -moz-transition: transform ease-in-out .2s;
+    -ms-transition: transform ease-in-out .2s;
+    -o-transition: transform ease-in-out .2s;
+}
