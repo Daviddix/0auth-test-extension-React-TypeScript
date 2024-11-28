@@ -1,6 +1,21 @@
 {
     "manifest_version": 3,
     "name": "Test Webapp",
+    "key" : "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAwg0W++bn66E11SAFVvfPllcJgNMAVF10KETJzvhKbjJF/NEQBT+cDPS1IJDSb6j1t4A8skPonxrCwpwCnK2ae1ywXNbs0i30n17RAtLmfWUGYNcN1LQz23O4i5Xpe7Frpt78qys5ReaiIoiVneI9Q8kIWRrsAGK7UHZEsaqYZyrIy2vUvrIpxNdLAYUTnVdPoQ+kiaXm4i985i45Rs3IOgicgJ1PksX1t0sm56YgfJNFNxrXmuxnt0B0DTgXdeCOToM50NWy0RNcRLolazEWYxVxLLJ4jxOdd2Y8ISKwplwwu125ygxPeDN/v1uJWkuWaulCqZm288hpRGa5uTNTYwIDAQAB",
     "version": "1.0.0",
-    "action": { "default_popup": "index.html" }
+    "action": { "default_popup": "index.html" },
+    "permissions": ["sidePanel", "identity"],
+    "side_panel" : {
+      "default_path" : "index.html"
+    },
+    "background": {
+      "service_worker": "./src/bg.ts"
+    },
+    "oauth2": {
+      "client_id": "118110896421-ervsuf94u7r9kk149gobksam74k961ke.apps.googleusercontent.com",
+      "scopes": [
+        "https://www.googleapis.com/auth/userinfo.profile",
+        "https://www.googleapis.com/auth/userinfo.email"
+      ]
+    }
   }

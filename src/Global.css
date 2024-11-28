@@ -10,8 +10,8 @@ html{
 }
 
 main{
-    width:350px;
-    height:450px;
+    min-width:350px;
+    height:100vh;
 }
 
 button:active{
